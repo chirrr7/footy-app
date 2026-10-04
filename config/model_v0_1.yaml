@@ -1,0 +1,35 @@
+model:
+  name: FUTX Player Index
+  version: "0.1.0"
+  score_min: 0
+  score_max: 100
+  absolute_scale: true
+
+context:
+  league_strength_max_share: 0.05
+  knockout_multiplier: 1.05
+  opponent_strength_adjustment: false
+  recency_decay: false
+  possession_adjustment: false
+
+discipline:
+  enabled: true
+  yellow_weight: 1.0
+  red_equivalent_yellows: 2.0
+  fouls_count: false
+
+minutes:
+  minimum_threshold: null
+  use_per90: true
+  use_volume: true
+  use_confidence: true
+
+# Placeholder only. We will calibrate category and metric weights from backtests.
+categories:
+  attacking: {}
+  creation: {}
+  progression: {}
+  dribbling: {}
+  pressing: {}
+  defending: {}
+  goalkeeping: {}
