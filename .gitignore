@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.DS_Store
+
+# Keep raw/processed data out of git by default.
+data/raw/*
+data/cleaned/*
+data/processed/*
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/processed/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
